@@ -8608,3 +8608,31 @@ input, select, textarea {
   height: 100%;
   object-fit: contain;
 }
+
+/* Make captions always visible */
+.custom-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-card .image img {
+  width: 100%;
+  display: block;
+}
+
+/* Overlay always visible */
+.custom-card .caption.always-visible {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* Remove hover dependency */
+.custom-card .caption {
+  opacity: 1 !important;
+  transform: none !important;
+}
