@@ -8,9 +8,36 @@
 
 <style>
 .content p { margin-bottom: 1.2em; }
-.hero-sub { margin-bottom: 25px; font-size: 1.15em; }
-.form-spacing input { margin-bottom: 15px; }
-.cta-note { font-size: 14px; opacity: 0.7; margin-top: 15px; }
+
+.hero-big { margin-bottom: 20px; }
+
+.hero-sub {
+  margin-bottom: 20px;
+  font-size: 1.15em;
+}
+
+.hero-spacing { margin-bottom: 25px; }
+
+.form-spacing input { margin-bottom: 12px; }
+
+.cta-note {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+.section-spacing {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* IMAGE FIX */
+.banner .image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
 </style>
 
 </head>
@@ -19,30 +46,27 @@
 
 <div id="wrapper" class="divided">
 
-<!-- HERO ONLY -->
-<section class="banner style1 orient-left content-align-left image-position-right fullscreen">
+<!-- HERO -->
+<section class="banner style1 orient-left content-align-left image-position-center fullscreen">
 
 <div class="content">
 
 <p>Early Access</p>
 
-<h1>
-A system for thinking, deciding,<br>
-and acting — built in 7 days.
+<h1 class="hero-big">
+You know what matters.<br>
+But your days don’t reflect it.
 </h1>
 
 <p class="hero-sub">
-Most people don’t have a motivation problem.<br>
-They have a structure problem.
+Not a discipline problem.<br>
+A structure problem.
 </p>
 
-<p>
-You think. You plan.<br>
-But when it’s time to act — things slow down.
-</p>
-
-<p>
-Alignment OS is a system designed to close that gap.
+<p class="hero-spacing">
+Alignment OS is a personal operating system<br>
+you build in 7 days — so your decisions feel clear,<br>
+and your actions follow.
 </p>
 
 <ul class="actions stacked">
@@ -66,18 +90,100 @@ Alignment OS is a system designed to close that gap.
 </ul>
 
 <p class="cta-note">
-Early users will get access before public release
+Join a small group building this before release
 </p>
 
 </div>
 
 <div class="image">
-<img src="images/banner.jpg" alt="" />
+<img src="images/banner.jpg" alt="Alignment OS Preview" />
 </div>
 
+</section>
+
+<!-- SECTION 2 -->
+<section class="wrapper style1 align-center section-spacing">
+<div class="inner">
+
+<h2>Why this exists</h2>
+
+<p class="major">
+You don’t struggle to think.
+</p>
+
+<p>
+You struggle to translate thinking into action.<br><br>
+That gap creates friction.<br>
+And friction breaks consistency.
+</p>
+
+</div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="wrapper style1 align-center section-spacing">
+<div class="inner">
+
+<h2>What this is</h2>
+
+<p class="major">
+A personal operating system.
+</p>
+
+<p>
+A structure for your thinking,<br>
+so your decisions become clearer,<br>
+and your actions more consistent.
+</p>
+
+</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="wrapper style1 align-center section-spacing">
+<div class="inner">
+
+<h2>What you get</h2>
+
+<p class="major">
+Early access to the first version.
+</p>
+
+<p>
+A system designed to reduce hesitation,<br>
+increase clarity,<br>
+and help you act with direction.
+</p>
+
+<ul class="actions stacked" style="margin-top: 25px;">
+<li>
+<form action="https://formspree.io/f/xkoqaddy" method="POST">
+
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<input type="hidden" name="_redirect" value="https://thehumancognilab.com/offer">
+<input type="hidden" name="_next" value="https://thehumancognilab.com/offer">
+<input type="hidden" name="_captcha" value="false">
+
+<div style="margin-top: 12px;">
+  <button type="submit" class="primary">
+    Join early access
+  </button>
+</div>
+
+</form>
+</li>
+</ul>
+
+<p class="cta-note">
+Limited early group
+</p>
+
+</div>
 </section>
 
 </div>
 
 </body>
 </html>
+
